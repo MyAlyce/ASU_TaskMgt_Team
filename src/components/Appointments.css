@@ -1,0 +1,32 @@
+/* Appointments.css */
+.appointments {
+    padding: 30px 40px;
+    background-color: #f0f0f0;
+    margin: 20px 0;
+    border-radius: 10px;
+  }
+  
+  .appointment-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+  }
+  
+  .appointment-details p {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+  
+  .appointment-time {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .check-btn {
+    font-size: 1.5rem;
+  }
+  
