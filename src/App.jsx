@@ -4,19 +4,28 @@ import './App.css'
 import React from 'react';
 import Header from './pages/components/Header';
 import MainPage from './pages/MainPage';
-import Mindfulness from './pages/components/Mindfulness'
+import Mindfulness from './pages/Mindfulness';
+import Food from './pages/Food';
+import Sleep from './pages/Sleep';
+import Exercise from './pages/Exercise';
 import Footer from './pages/components/Footer';
 
 function App() {
-    const [currentPage, setCurrentPage] = useState('main'); // 'main' or 'exercise'
+    const [currentPage, setCurrentPage] = useState('main');
 
     const renderPage = () => {
         switch (currentPage) {
             case 'mindfulness':
-                return <Mindfulness />;
+                return <Mindfulness currentPage={currentPage} setCurrentPage={setCurrentPage} />;
+            case 'food':
+                return <Food currentPage={currentPage} setCurrentPage={setCurrentPage} />;
+            case 'sleep':
+                return <Sleep currentPage={currentPage} setCurrentPage={setCurrentPage} />;
+            case 'exercise':
+                return <Exercise currentPage={currentPage} setCurrentPage={setCurrentPage} />;
             case 'main':
             default:
-                return <MainPage />;
+                return <MainPage currentPage={currentPage} setCurrentPage={setCurrentPage} />;
         }
     };
 
@@ -24,11 +33,15 @@ function App() {
         <div className="App">
             <div className="container">
                 <Header />
-                {/* Page switcher for demo */}
+                {/* Page switcher for demo to see all pages made */}
                 <div style={{ marginBottom: '1rem' }}>
                     <button onClick={() => setCurrentPage('main')}>Main Page</button>
+                    <button onClick={() => setCurrentPage('sleep')}>Sleep Page</button>
+                    <button onClick={() => setCurrentPage('exercise')}>Exercise Page</button>
+                    <button onClick={() => setCurrentPage('food')}>Food Page</button>
                     <button onClick={() => setCurrentPage('mindfulness')}>Mindfulness Page</button>
                 </div>
+                {/* */}
                 <div className="page-view">
                     {renderPage()}
                 </div>

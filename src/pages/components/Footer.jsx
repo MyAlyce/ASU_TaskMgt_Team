@@ -1,9 +1,9 @@
 import React from 'react';
 import './Footer.css';
 
-function Footer() {
+function Footer({ currentPage, setCurrentPage }) {
   return (
-    <div className="footer">
+      <div className="horizontal-box-db">
           <button className="footer-btn">
               <img src="/images/goals.png" />
               <div>Goals</div>

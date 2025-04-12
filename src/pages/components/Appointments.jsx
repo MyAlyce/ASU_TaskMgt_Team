@@ -1,9 +1,9 @@
 import React from 'react';
 import './Appointments.css';
 
-function Appointments() {
+function Appointments({ currentPage, setCurrentPage }) {
   return (
-    <div className="appointments">
+      <div className="component-box">
       <h2>Appointments</h2>
       <div className="appointment-item">
         <div className="appointment-details">

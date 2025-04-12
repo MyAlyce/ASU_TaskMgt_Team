@@ -1,9 +1,9 @@
 import React from 'react';
 import './MissionsList.css';
 
-function MissionsList() {
+function MissionsList({ currentPage, setCurrentPage }) {
   return (
-    <div className="missions-list">
+    <div className="component-box">
       <h2>Upcoming Missions</h2>
       <div className="mission-item">
         <div className="mission-details">

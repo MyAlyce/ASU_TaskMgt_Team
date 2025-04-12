@@ -1,0 +1,46 @@
+/* Pillars.css */
+
+/* Used for:
+    Mindfulness.jsx
+    Exercise.jsx
+    Food.jsx
+    Sleep.jsx
+*/
+
+/* 
+    White: white
+    App Background: #ededed
+    Light Blue: #86CCFF
+    Dark Blue: #4a90e2
+*/
+
+.page-selection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.ps-btn {
+    background-color: white;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+    .ps-btn-active {
+        font-size: 1rem;
+        color: #86CCFF;
+        background-color: white;
+        border-radius: 20px;
+        font-size: 0.8rem;
+        cursor: pointer;
+    }
+
+.progressbar {
+    margin: auto;
+    padding: 20px;
+    width: 400px;
+    height: 400px;
+}

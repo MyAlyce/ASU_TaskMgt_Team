@@ -1,3 +1,11 @@
+
+/* 
+    White: white
+    App Background: #ededed
+    Light Blue: #86CCFF
+    Dark Blue: #4a90e2
+*/
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -65,4 +73,26 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+.component-box {
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.horizontal-box {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.horizontal-box-db {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4a90e2;
+    color: white;
 }

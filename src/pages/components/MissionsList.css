@@ -1,10 +1,11 @@
 /* MissionsList.css */
-.missions-list {
-  padding: 20px;
-  background-color: #f0f0f0;
-  border-radius: 10px;
-  margin: 20px 0;
-}
+
+/* 
+    White: white
+    App Background: #ededed
+    Light Blue: #86CCFF
+    Dark Blue: #4a90e2
+*/
 
 .mission-item {
   display: flex;

@@ -1,10 +1,17 @@
 /* App.css */
+
+/* 
+    White: white
+    App Background: #ededed
+    Light Blue: #86CCFF
+    Dark Blue: #4a90e2
+*/
+
 .App {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #f4f4f4;
     padding: 0;
 }
 
@@ -12,7 +19,7 @@
     width: 100%; /* Takes the full width of the viewport */
     min-height: 100vh; /* Ensures full height */
     padding: 40px;
-    background-color: white;
+    background-color: #ededed;
     border-radius: 0; /* Remove rounded corners */
     box-shadow: none; /* Remove shadow for a flat full-screen look */
 }
