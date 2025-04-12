@@ -1,16 +1,18 @@
 import React from 'react';
 import { Dropdown } from 'react-bootstrap';
+import { ChevronLeft, ChevronDown } from "lucide-react";
 import './Mindfulness.css';
 
 function Mindfulness() {
     return (
         <div>
             <div className="backbar">
-                <img src="/images/arrow.png" />
+                <ChevronLeft size={32} />
                 <h2>Analytics</h2>
                 <Dropdown>
                     <Dropdown.Toggle variant="success" id="dropdown-mindfulness">
-                        Dropdown?
+                        Daily
+                        <ChevronDown size={16} />
                     </Dropdown.Toggle>
                     <Dropdown.Menu>
                         <Dropdown.Item>Daily</Dropdown.Item>
