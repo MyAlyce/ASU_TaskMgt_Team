@@ -1,0 +1,71 @@
+/* CheckInScore.css */
+.checkin-score {
+    padding: 30px 40px;
+    background-color: #4a90e2;
+    color: white;
+    margin: 20px 0;
+    border-radius: 10px;
+  }
+  
+  .today-score {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+.report-btn {
+    background-color: #86CCFF;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #86CCFF;
+    height: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+.progress {
+    height: 100%;
+    background-color: white;
+    border-radius: 5px 0 0 5px;
+}
+  
+  .score-icons {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+  }
+  
+  .score-icons div {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+.icon-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.icon-circle {
+    background-color: #86CCFF;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 10px;
+}
+
+.icon-circle img {
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+}
+  

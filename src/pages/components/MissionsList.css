@@ -1,0 +1,54 @@
+/* MissionsList.css */
+.missions-list {
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.mission-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.mission-details {
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+.mission-details h3 {
+  font-size: 1.5rem;
+}
+
+.mission-details p {
+  font-size: 1rem;
+}
+
+.progress-bar {
+  width: 100%;
+  max-width: 400px;
+  background-color: #ddd;
+  height: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 5px;
+}
+
+.progress {
+  height: 100%;
+  background-color: #4a90e2;
+  border-radius: 5px 0 0 5px;
+}
+
+.tick-icon {
+  width: 50px; /* Adjust size as needed */
+  height: auto;
+  cursor: pointer;
+  position: relative;
+  left: -50px; /* Move the icon 10px to the left */
+}
