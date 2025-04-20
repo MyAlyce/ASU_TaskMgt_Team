@@ -9,9 +9,15 @@ import Food from './pages/Food';
 import Sleep from './pages/Sleep';
 import Exercise from './pages/Exercise';
 import Footer from './pages/components/Footer';
+import LoginPage from './pages/login';
 
 function App() {
     const [currentPage, setCurrentPage] = useState('main');
+    const [isLoggedIn, setIsLoggedIn] = useState(false);
+    const handleLogin = () => {
+        // You can add more logic here later (API call, loading spinner, etc.)
+        setIsLoggedIn(true);
+    };
 
     const renderPage = () => {
         switch (currentPage) {
@@ -31,22 +37,29 @@ function App() {
 
     return (
         <div className="App">
-            <div className="container">
-                <Header />
-                {/* Page switcher for demo to see all pages made */}
-                <div style={{ marginBottom: '1rem' }}>
-                    <button onClick={() => setCurrentPage('main')}>Main Page</button>
-                    <button onClick={() => setCurrentPage('sleep')}>Sleep Page</button>
-                    <button onClick={() => setCurrentPage('exercise')}>Exercise Page</button>
-                    <button onClick={() => setCurrentPage('food')}>Food Page</button>
-                    <button onClick={() => setCurrentPage('mindfulness')}>Mindfulness Page</button>
+            {isLoggedIn ? (
+                <div className="container">
+                    <Header />
+                    {/* Page switcher for demo to see all pages made */}
+                    <div style={{ marginBottom: '1rem' }}>
+                        <button onClick={() => setCurrentPage('main')}>Main Page</button>
+                        <button onClick={() => setCurrentPage('sleep')}>Sleep Page</button>
+                        <button onClick={() => setCurrentPage('exercise')}>Exercise Page</button>
+                        <button onClick={() => setCurrentPage('food')}>Food Page</button>
+                        <button onClick={() => setCurrentPage('mindfulness')}>Mindfulness Page</button>
+                    </div>
+                    {/* */}
+                    <div className="page-view">
+                        {renderPage()}
+                    </div>
+                    <Footer />
+
                 </div>
-                {/* */}
-                <div className="page-view">
-                    {renderPage()}
-                </div>
-                <Footer />
-            </div>
+            ) :
+                (
+                    <LoginPage onLogin={handleLogin} />
+                )
+            }
         </div>
     );
 }
