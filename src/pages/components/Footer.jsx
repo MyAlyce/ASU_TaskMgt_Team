@@ -1,21 +1,21 @@
 import React from 'react';
 import './Footer.css';
 
-function Footer({ currentPage, setCurrentPage }) {
+function Footer() {
   return (
-      <div className="horizontal-box-db">
-          <button className="footer-btn">
-              <img src="/images/goals.png" />
-              <div>Goals</div>
-          </button>
-          <button className="footer-btn">
-              <img src="/images/check-in.png" />
-              <div>Check-in</div>
-          </button>
-          <button className="footer-btn">
-              <img src="/images/analytics.png" />
-              <div>Analytics</div>
-          </button>
+    <div className="footer">
+      <div className="footer-item">
+        <img src="/images/goals.png" alt="Goals" className="footer-icon" />
+        <p>Goals</p>
+      </div>
+      <div className="footer-item">
+        <img src="/images/checkin.png" alt="Check-in" className="footer-icon" />
+        <p>Check-in</p>
+      </div>
+      <div className="footer-item">
+        <img src="/images/analytics.png" alt="Analytics" className="footer-icon" />
+        <p>Analytics</p>
+      </div>
     </div>
   );
 }

@@ -1,23 +1,46 @@
-/* Footer.css */
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #86CCFF; /* Exact background color from Figma */
+  border-radius: 10px; /* Add rounded corners */
+}
 
-/* 
-    White: white
-    App Background: #ededed
-    Light Blue: #86CCFF
-    Dark Blue: #4a90e2
-*/
-  
-  .footer-btn {
-    background: none;
-    border: none;
-    color: white;
-    font-size: 1.5rem;
-    cursor: pointer;
-  }
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black; /* Text color changed to black */
+}
 
-  .footer-btn img {
-    width: 70%;
-    height: 70%;
-    object-fit: contain;
-  }
-  
+.footer-icon {
+  width: 70px; /* Icon size */
+  height: 70px;
+  margin-bottom: 15px; /* Space between icon and text */
+}
+
+/* Text color beneath icons */
+.footer-item p {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0;
+  color: black; /* Set text color to black */
+}
+
+.footer-item:hover p {
+  color: black; /* Maintain black text on hover */
+}
+
+/* Faded effect for Goals and Analytics icons */
+.footer-item:first-child .footer-icon, /* Goals icon */
+.footer-item:last-child .footer-icon { /* Analytics icon */
+  filter: grayscale(100%) brightness(0.4); /* Strong fade */
+  opacity: 0.3;
+}
+
+.footer-item:first-child:hover .footer-icon, /* Hover restores vibrance for Goals */
+.footer-item:last-child:hover .footer-icon { /* Hover restores vibrance for Analytics */
+  filter: none;
+  opacity: 1;
+}

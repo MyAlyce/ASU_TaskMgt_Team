@@ -1,79 +1,109 @@
-/* CheckInScore.css */
-
-/* 
-    White: white
-    App Background: #ededed
-    Light Blue: #86CCFF
-    Dark Blue: #4a90e2
-*/
-
 .checkin-score {
-    background-color: #4a90e2;
-    color: white;
-    padding: 20px;
-    border-radius: 10px;
-    margin: 20px 0;
+  padding: 30px 40px;
+  background-color: #40A8F4; /* Original blue background */
+  color: white;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for better elevation */
 }
-  
-  .today-score {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+
+.checkin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
 
 .report-btn {
-    background-color: #86CCFF;
-    border-radius: 20px;
-    font-size: 1.5rem;
-    cursor: pointer;
+  background-color: #86CCFF; /* Light blue background */
+  color: black; /* Black text color */
+  padding: 10px 20px; /* Add padding for a larger button */
+  border-radius: 25px; /* Fully rounded button */
+  font-size: 1rem; /* Adjust font size */
+  font-weight: bold; /* Make the text bold */
+  border: none; /* Remove border */
+  cursor: pointer; /* Add pointer cursor on hover */
+  text-align: center; /* Center-align the text */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for elevation */
+  transition: background-color 0.3s ease; /* Smooth hover transition */
 }
 
-.progress-bar {
-    width: 100%;
-    background-color: #86CCFF;
-    height: 10px;
-    border-radius: 5px;
-    margin: 10px 0;
+.report-btn:hover {
+  background-color: #87c5ff; /* Slightly darker blue on hover */
 }
-.progress {
-    height: 100%;
-    background-color: white;
-    border-radius: 5px 0 0 5px;
-}
-  
-  .score-icons {
-    display: flex;
-    justify-content: space-around;
-    padding: 20px 0;
-  }
-  
-  .score-icons div {
-    text-align: center;
-    font-size: 1.5rem;
-  }
 
-.icon-btn {
-    background: none;
-    border: none;
-    color: white;
-    font-size: 1.5rem;
-    cursor: pointer;
+.checkin-progress {
+  margin: 20px 0;
+  position: relative; /* Enable relative positioning for child elements */
+}
+
+.checkin-progress span {
+  display: block;
+  font-size: 1.5rem; /* Increased size for 'Today' */
+  font-weight: bold;
+  position: relative; /* Relative positioning for fine-tuning */
+  top: -10px; /* Move 'Today' slightly upwards */
+  margin-bottom: 8px; /* Add spacing between 'Today' and the progress bar */
+}
+
+.checkin-progress-bar {
+  width: 100%;
+  max-width: 400px; /* Match the missions list progress bar length */
+  background-color: #86CCFF; /* Use the same grey as the MissionsList progress bar */
+  height: 12px;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-top: 10px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for better distinction */
+}
+
+.checkin-progress-fill {
+  background-color: white; /* White color for the filled progress */
+  height: 100%;
+  transition: width 0.3s ease-in-out; /* Smooth animation for progress */
+  box-shadow: 0 0 3px rgba(255, 255, 255, 0.6); /* Add a glow for visibility */
+}
+
+.checkin-icons {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0;
+}
+
+.icon {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  text-align: center;
+  color: white;
+  cursor: pointer;
 }
 
 .icon-circle {
-    background-color: #86CCFF;
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    padding: 10px;
+  width: 90px; /* Increased container size */
+  height: 90px; /* Increased container size */
+  background-color: #86CCFF; /* Match the light blue background */
+  border-radius: 50%; /* Make it circular */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px; /* Add spacing between the circle and percentage text */
 }
 
-.icon-circle img {
-    width: 70%;
-    height: 70%;
-    object-fit: contain;
+.icon img {
+  width: 50px; /* Increased image size */
+  height: 50px; /* Increased image size */
+  object-fit: contain; /* Ensure proper scaling without distortion */
 }
-  
+
+.icon p {
+  font-size: 1.5rem; /* Further increased percentage text size */
+  font-weight: bold;
+  margin-top: 8px; /* Add more space between percentage and circle */
+}

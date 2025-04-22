@@ -1,33 +1,47 @@
-/* MissionsList.css */
+.missions-list {
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  margin: 20px 0;
+}
 
-/* 
-    White: white
-    App Background: #ededed
-    Light Blue: #86CCFF
-    Dark Blue: #4a90e2
-*/
+.missions-list h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #1e293b;
+}
 
 .mission-item {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 24px;
   background-color: white;
-  border-radius: 10px;
-  margin-bottom: 15px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .mission-details {
   flex-grow: 1;
-  margin-right: 10px;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* ⬅️ Spacing between h3, p, and progress bar */
 }
 
 .mission-details h3 {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0;
 }
 
 .mission-details p {
   font-size: 1rem;
+  color: #334155;
+  margin: 0;
 }
 
 .progress-bar {
@@ -37,19 +51,23 @@
   height: 10px;
   border-radius: 5px;
   overflow: hidden;
-  margin-top: 5px;
 }
 
 .progress {
   height: 100%;
-  background-color: #4a90e2;
+  background-color: #40A8F4;
   border-radius: 5px 0 0 5px;
+  transition: width 0.3s ease;
+}
+
+.mission-status {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 50px;
 }
 
 .tick-icon {
-  width: 50px; /* Adjust size as needed */
-  height: auto;
-  cursor: pointer;
-  position: relative;
-  left: -50px; /* Move the icon 10px to the left */
+  width: 50px;
+  height: 50px;
 }

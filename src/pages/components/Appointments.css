@@ -1,33 +1,73 @@
-/* Appointments.css */
+.appointments {
+  padding: 20px 30px;
+  background-color: #f0f0f0;
+  margin: 20px 0;
+  border-radius: 10px;
+}
 
-/* 
-    White: white
-    App Background: #ededed
-    Light Blue: #86CCFF
-    Dark Blue: #4a90e2
-*/
-  
-  .appointment-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: white;
-    border-radius: 10px;
-  }
-  
-  .appointment-details p {
-    margin: 0;
-    font-size: 1.2rem;
-  }
-  
-  .appointment-time {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  
-  .check-btn {
-    font-size: 1.5rem;
-  }
-  
+.appointments h2 {
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.appointment-item {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.appointment-left {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 10px;
+}
+
+.appointment-date {
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #0f172a;
+}
+
+.appointment-doctor {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #777;
+}
+
+.appointment-center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.clock-icon {
+  width: 36px;
+  height: 36px;
+}
+
+.appointment-hour {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #0f172a;
+}
+
+.appointment-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.check-icon {
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+}

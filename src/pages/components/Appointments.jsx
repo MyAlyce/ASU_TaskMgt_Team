@@ -1,18 +1,21 @@
 import React from 'react';
 import './Appointments.css';
 
-function Appointments({ currentPage, setCurrentPage }) {
+function Appointments() {
   return (
-      <div className="component-box">
+    <div className="appointments">
       <h2>Appointments</h2>
       <div className="appointment-item">
-        <div className="appointment-details">
-          <p>Tomorrow</p>
-          <p>Dr. ABC, XYZ Hospital</p>
+        <div className="appointment-left">
+          <p className="appointment-date">Tomorrow</p>
+          <p className="appointment-doctor">Dr. ABC, XYZ Hospital</p>
         </div>
-        <div className="appointment-time">
-          <span role="img" aria-label="Clock">🕒</span> 1:00 PM
-          <button className="check-btn">✔️</button>
+        <div className="appointment-center">
+          <img src="/images/clock.png" alt="Clock" className="clock-icon" />
+          <span className="appointment-hour">1:00 PM</span>
+        </div>
+        <div className="appointment-right">
+          <img src="/images/tick2.png" alt="Check" className="check-icon" />
         </div>
       </div>
     </div>

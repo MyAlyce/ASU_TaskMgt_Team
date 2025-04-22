@@ -1,7 +1,7 @@
 import React from 'react';
 import './Header.css';
 
-function Header({ currentPage, setCurrentPage }) {
+function Header() {
   return (
     <div className="header">
       <img src="/images/MyAlyceLogo.png" alt="Logo" className="logo" />
@@ -16,3 +16,4 @@ function Header({ currentPage, setCurrentPage }) {
 }
 
 export default Header;
+
